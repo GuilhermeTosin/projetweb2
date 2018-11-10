@@ -1,0 +1,77 @@
+Navigation générale :
+    - Boutons back
+
+ajoutJeux.php :
+    - Validation
+    - Réparer ajout/effacer image
+    - Ajouter champ no_serie
+    - journees entre locations pour membres différents
+    - Bloquer la mise en vente si une location est réservée dans le futur
+
+ajoutMembre.php :
+    - Ajouter checkbox newsletter / alerte email pour nouveaux messages dans la messagerie
+    - Ajouter options type de membre (Régulier ou Plus)
+
+membre.php :
+    - Ajouter infos de chaque jeu
+    - Ajouter infos dates de location / vente
+    - Ajouter membre qui a fait la transaction et dates
+    - Ajouter non-disponibilité d'un jeu en location (ajout de la table non_dispos)
+    - Pagination
+
+jeux.php :
+    - validation dates de location
+
+rechercher.php :
+    - Ajax de la recherche
+    - Pagination
+    - Réparer dates de location
+    - ajouter filtre évaluation
+    - recherche par région (ajouter code postal pour membres) & Google Map
+
+Evaluation :
+    - Pouvoir mettre un 0 étoiles ou -1 (non-évalué)
+
+Admin :
+    - adminJeux.php : ajouter nbVentes, nbAchats, nbLocations, nbEvaluation
+    - Envoyer courriel externe pour validation d'un membre et messagerie interne pour validation d'un jeu
+    - Onglet Options du site (pagination défaut, nb max d'images, grosseur max d'images)
+    - Onglet Reporting (graph ventes/location croisés par dates, membres, jeux, prix, profits (2.5% par transaction))
+    - Onglet Menus : ajouter tables jeux, concepteurs
+    - Entrer la date limite pour les membres Plus (x mois ou x ans)
+
+ControleurAchat.php :
+    - Réparer transaction Paypal
+
+messagerie.php :
+    - Refaire l'interface pour les messages envoyés et reçus
+    - Ajouter l'interface pour envoyer un message
+    - Destinatire autofill du courriel
+    - Groupe destinataires Admins
+    - Cocher envoyer email externe
+    - Effacer message
+    - Brouillons
+
+Login :
+    - Réparer Se souvenir de moi
+    - Ajouter oublié mot de passe
+
+Alertes :
+    - Nouveaux messages (Login to messagerie directement)
+    - Admins : Nouveaux membres et jeux (Login to onglet directement)
+    - Messages d'erreurs
+
+Zone membres plus (pour 50$ par année - 5$ par mois) :
+    - Permettre l'échange de jeux entre membres
+    - Permettre le paiement cash ou chèque
+
+Table membre :
+    - Ajouter champ date_limite_membre_plus
+    - Ajouter champ image_profil
+    - Ajouter champ code_postal
+    - Ajouter champ age_majeur
+    - Ajouter champ consentement_gardien
+
+achat et location :
+    - Ajouter champ Membre Plus
+    - Calculer lr 5% si Membre normal
